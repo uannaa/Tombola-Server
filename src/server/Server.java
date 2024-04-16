@@ -50,6 +50,13 @@ public class Server {
         
     }
     
+    public void ricevi() throws IOException {
+        
+        String punto = in.readLine();
+        System.out.println(punto + "\n");
+        
+    }
+    
     public static void main(String[] args) throws IOException {
         
         int tombolone[][] = new int[9][10];
@@ -68,6 +75,7 @@ public class Server {
         System.out.println("[6] - Numeri generati con successo!" + "\n");
         
         s.estrai();
+    
     }
     
     //Estrazione
